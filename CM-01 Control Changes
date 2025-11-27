@@ -1,0 +1,124 @@
+**Process**  
+Control Changes  
+-----------------------------------
+
+## **Applicable Domains:** Engineering, Configuration Management
+
+### 1. Purpose
+
+This document defines the process for controlling changes to engineering data. Control is essential for performing changes consistently, establishing change traceability and accountability, maintaining integrity, and ensuring data correctness across the product lifecycle.
+
+---
+
+### 2. Revision History
+
+---
+
+### 3. References
+
+| Document Number | Title                                             |
+| --------------- | ------------------------------------------------- |
+| CM-01-001       | Version Control for Engineering Data              |
+| CM-01-002       | Peer Review Process                               |
+| CM-01-003       | CCB and Baseline Control Process                  |
+| CM-02-001       | Permission Scheme for Controlled Engineering Data |
+| CM-02-002       | Preserve Integrity Process                        |
+| CM-PRF-TEMPLATE | Peer Review Form (PRF) Template                   |
+
+---
+
+### 4. Scope
+
+This process applies to all changes made to engineering data under the control of DRS. Types of changes include:
+
+* Version check-ins (SharePoint, Windchill, Xpedition, DOORS, Cameo)
+* Revisions
+* Product/system/subsystem baselines
+
+---
+
+### 5. Roles and Responsibilities
+
+| Role                       | Responsibility                                                                         |
+| -------------------------- | -------------------------------------------------------------------------------------- |
+| Engineering        | Owns data and changes, establishes traceability, participates in reviews      |
+| Configuration Management   | Owns product configuration/baseline definition, owns the Control Change and subordinate processes |
+
+---
+
+### 6. Change States
+
+#### 6.1 Draft
+
+An engineering draft is any data that includes modifications to its controlled baseline (e.g., "redlines") which have not been released in a formal revision.
+
+Drafts include marked up, uncontrolled documents (drawings, Word, spreadsheets) and controlled versions in an engineering data repository. See Version Control for Engineering Data.
+
+Because draft materials have not been peer reviewed, Engineering personnel shall treat all drafts as "unreleased". The modifications within drafts shall **not** be used or referred to by any other data items unless expressly permitted by Engineering and/or Program leadership. In these instances, the drafts shall be a controlled version within a data repository so the specific version number may be referenced for traceability.
+
+#### 6.2 Released
+
+#### 6.3 Implemented
+
+### 7. Change Types and Mechanisms
+
+#### 7.1 Versions
+
+Versions (`A` to `A.1`) are incremental updates to data and limited to Class II changes, unless specified otherwise in a program Configuration Management Plan. See Version Control for Engineering Data.
+
+#### 7.2 Revisions
+
+Revisions (`A` to `B`) are major updates to data classified as Class I changes and internally assessed before release. See Peer Review and Classify Changes.
+
+Because Class I changes usually require customer approval, data items which have passed peer review may transition to a "internal release" state until the customer approves the change. Items in this state are considered appropriate for use/reference by other items.
+
+For design/development programs, the customer approval requirement may vary depending on product complexity and the current development stage. The application of this process to a set of program requirements shall be defined in the program Configuration Management Plan.
+
+#### 7.4 Baseline-Level Approval
+
+* A baseline consists of a group of coordinated engineering data revisions which typically indicate a significant milestone in the product lifecycle.
+* Approval of a baseline requires:
+
+  * **Peer review** of all data items
+  * **Configuration Control Board (CCB)** review of the revised top-level configuration(s)
+  * **Customer review**, typically conducted at a contractual design review meeting
+  * Formal **Engineering Change Order (ECO)** in Empower PLM
+
+---
+
+### 8. Authorized Signature List (ASL)
+
+* The ASL is defined **per project** by the Engineering Lead(s).
+* The ASL should reflect:
+
+  * Type of data under review (mechanical, electrical, software, systems, etc.)
+  * Project constraints such as staffing, budget, and schedule
+* The PRF template includes embedded ASL fields with role definitions and routing logic.
+
+---
+
+### 9. Integration With Other Processes
+
+The approval process is integrated with:
+
+* CM-01-001: Version Control (triggers version approval)
+* CM-01-002: Peer Review Process (used for revision-level approvals)
+* CM-01-003: CCB and Baseline Control (used for baseline-level approvals)
+* CM-PRF-TEMPLATE: Defines review and approval form structure
+
+---
+
+### 10. Compliance
+
+* All changes to engineering data must be reviewed and approved according to this process.
+* Configuration Management must ensure ASLs are on file and PRFs are properly completed.
+* Any release of a revision or baseline without proper approval constitutes a process violation.
+
+---
+
+**Document Control**
+
+* Document Number: CM-03
+* Effective Date: \[To be Assigned]
+* Owner: \[Configuration Manager]
+* Last Reviewed: \[To be Assigned]
